@@ -1,6 +1,6 @@
-import React from "react";
 import { useState } from "react";
-// Kütüphane importları
+
+// library imports
 import { PlusIcon } from "@heroicons/react/24/solid";
 
 const CustomForm = ({ addTask }) => {
@@ -15,6 +15,7 @@ const CustomForm = ({ addTask }) => {
     });
     setTask("");
   };
+
   return (
     <form className="todo" onSubmit={handleFormSubmit}>
       <div className="wrapper">
@@ -39,5 +40,4 @@ const CustomForm = ({ addTask }) => {
     </form>
   );
 };
-
 export default CustomForm;
